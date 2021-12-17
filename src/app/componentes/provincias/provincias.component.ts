@@ -31,7 +31,6 @@ export class ProvinciasComponent implements OnInit {
   }
 
 
-
   constructor(public apiservice: ApiserviceService) { }
 
   ngOnInit(): void {
