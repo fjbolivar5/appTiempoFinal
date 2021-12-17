@@ -4,10 +4,11 @@ import { Injectable } from '@angular/core';
     providedIn: 'root'
 })
 export class AppConstants {
-    public URL_PROVINCIAS = "http://localhost:5000/provincias/";
-    public URL_MUNICIPIOS = "http://localhost:5000/municipios/";
-    public URL_TIEMPOPROVINCIA = "http://localhost:5000/tiempoprovincia/";
-    public URL_TIEMPOMUNICIPIO = "http://localhost:5000/tiempomunicipio/";
-    public URL_TIEMPOPROVINCIASFECHA = "http://localhost:5000/tiempoprovinciaFecha/";
-    public URL_TIEMPOMUNICIPIOFECHA = "http://localhost:5000/tiempomunicipioFecha/";
+    public PUERTO = "5000"
+    public URL_PROVINCIAS = "http://localhost:" + this.PUERTO + "/provincias/";
+    public URL_MUNICIPIOS = "http://localhost:" + this.PUERTO + "/municipios/";
+    public URL_TIEMPOPROVINCIA = "http://localhost:" + this.PUERTO + "/tiempoprovincia/";
+    public URL_TIEMPOMUNICIPIO = "http://localhost:" + this.PUERTO + "/tiempomunicipio/";
+    public URL_TIEMPOPROVINCIASFECHA = "http://localhost:" + this.PUERTO + "/tiempoprovinciaFecha/";
+    public URL_TIEMPOMUNICIPIOFECHA = "http://localhost:" + this.PUERTO + "/tiempomunicipioFecha/";
 }
